@@ -6,15 +6,27 @@
     <title>ARIA-Accessability</title>
 </head>
 <body>
-    <nav role="navigation" aria-label="the navigation">
-        <ul style="display: inline;">
-            <li>Home</li>
-            <li>ARIA</li>
-            <li>Role</li>
-        </ul>
-    </nav>
     <header>
-        <h1 aria-label="Main Heading">ARIA-Accessability | Day 2</h1>
+        <nav role="navigation">
+            <ul style="display: inline;">
+                <li>Home</li>
+                <li>ARIA</li>
+                <li>Role</li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <h1 aria-label="Main Heading">ARIA-Accessability | Day 2</h1>
+        <section id="info">
+            <h2 id="info" role="region">ARIA</h2>
+            <div aria-labelledby="info">
+                <p>Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</p>
+                <p>It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, ARIA enables accessible JavaScript widgets, form hints and error messages, live content updates, and more.</p>
+            </div>
+        </section>
+        <h2 id="info-2" role="region">Role</h2>
+        <p aria-labelledby="info-2">A role provides meaning to the screen readers and other applications of what certain parts of a web application do. The role typer are menubar, navigation, scrollbar... etc.</p>
+        <p>If the input has the type type on a radio the default role is the radio.  Same as a checkbox and so forth.</p>
+    </main>
 </body>
 </html>
